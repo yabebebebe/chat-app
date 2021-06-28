@@ -8,21 +8,7 @@
 </div>
 
 <div class="main-chat">
-  <div class="chat-box">
-    <div class="chat-title">
-      <div class="user-name">User</div>
-      <div class="chat-days">2021/6/25(Fri) 18:23:30</div>
-    </div>
-    <div class="chat-message">お腹すいたよん</div>
-  </div>
-
-  <div class="chat-box">
-    <div class="chat-title">
-      <div class="user-name">切島</div>
-      <div class="chat-days">2021/6/25(Fri) 18:26:30</div>
-    </div>
-    <div class="chat-message">漢気一筋ど根性</div>
-  </div>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
 <%= form_with model: [@room, @message], class: 'chat-form', local: true do |f| %>
