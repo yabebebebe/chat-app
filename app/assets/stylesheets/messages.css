@@ -130,6 +130,12 @@
   width: 100%;
 }
 
+.image-back {
+  width: 100%;
+  display: flex;
+  background-color: white;
+}
+
 .comment-form {
   background-color: white;
   width: 100%;
